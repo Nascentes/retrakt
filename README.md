@@ -24,7 +24,7 @@ Build docker container (`git clone https://github.com/Nascentes/retrakt.git && c
 
 Run docker container, eg: ```docker run -dit --name=retrakt --env="PUID=1040" --env="PGID=100" --volume="/volume1/Movies:/movies:ro" --volume="/etc/localtime:/etc/localtime:ro" --restart=unless-stopped retrakt:latest && docker logs -f retrakt```
 
-Notice the logs follow at the end? This is NECESSARY. The Trakt API (annoyingly) _requires_ manual intervention to get an initial access_token. The logs will tell you what to do, but it boils down to copying a unique key the API gives you and activating the device via the Trakt website. It's obnoxious, but you only need to do it once, or if your container crashes/restarts (has yet to happen to me). The script will automatically renew your token for you.
+Notice the logs follow at the end? This is NECESSARY. The Trakt API (annoyingly) _requires_ manual intervention to get an initial access_token. The logs will tell you what to do, but it boils down to copying a unique key the API gives you and authorizing the device via the Trakt website. It's obnoxious, but you only need to do it once, or if your container crashes/restarts (has yet to happen to me). The script will automatically renew your token for you.
 
 NOTE: I use this on my Synology NAS. PUID & PGID will be unique to the user you want your docker container to run as. (aka, someone with permissions to read your movies directory)
 
