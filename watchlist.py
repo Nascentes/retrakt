@@ -199,7 +199,7 @@ def get_local_movies():
         local_movies = {}
 
         for lm in local_files:
-                print("lm: ",lm)
+                #print("lm: ",lm)
                 m = re.search('^([A-Za-z0-9 \.:\-()]+)(?=\([0-9]+\))', lm)
                 y = re.search('\(([0-9]+?)\)', lm)
                 if m:
@@ -218,7 +218,7 @@ def main():
         for film in trakt_list:
                 post_data.append({'ids': {'imdb': '{0}'.format(film)}})
 
-        print("post_data: ",post_data)
+        #print("post_data: ",post_data)
 
         list_rm_url = 'users/{0}/lists/{1}/items/remove'.format(trakt_user,list_id)
 
