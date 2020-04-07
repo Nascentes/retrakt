@@ -30,6 +30,6 @@ NOTE: I use this on my Synology NAS. PUID & PGID will be unique to the user you 
 
 # Notes
 
-Huge thank you to the work of @linaspurinis in his [trakt.plex.scripts](https://github.com/linaspurinis/trakt.plex.scripts) repository. His work made this little project infinitely easier.
+Huge thank you to the work of @linaspurinis in his [trakt.plex.scripts](https://github.com/linaspurinis/trakt.plex.scripts) repository. His work was heavily borrowed from to make this a reality.
 
 This is very much a work-in-progress as far as compatibility for others and I'm not actively working on it. It works for ME, but that doesn't mean a whole lot for others. If you happen to run across this project and give it a go, feel free to file issues as you encounter them and I'll be happy to help where I can.
