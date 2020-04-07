@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-#MAINTANER Tony Atkinson "tony@atkinso.net"
+#MAINTANER  Nascentes "nasgit@atkinso.net"
 
 RUN apt-get update \
     && apt-get install -y cron python3-pip python3-dev \
@@ -24,6 +24,3 @@ RUN pip install -r requirements.txt
 
 CMD ["cron", "-f"]
 
-#ENTRYPOINT [ "python3" ]
-
-#CMD [ "watchlist.py" ]
