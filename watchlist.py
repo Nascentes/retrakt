@@ -200,7 +200,7 @@ def get_local_movies():
 
         for lm in local_files:
                 #print("lm: ",lm)
-                m = re.search('^([A-Za-z0-9 \.:\-()]+)(?=\([0-9]+\))', lm)
+                m = re.search('^([A-Za-z0-9,!é½· \.\'&:\-()]+)(?=\([0-9]+\))', lm)
                 y = re.search('\(([0-9]+?)\)', lm)
                 if m:
                         movie = m.group(0).rstrip()
