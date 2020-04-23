@@ -22,5 +22,7 @@ WORKDIR /app
 
 RUN pip install -r requirements.txt
 
+RUN python3 /app/watchlist.py > /proc/1/fd/1 2>/proc/1/fd/2
+
 CMD ["cron", "-f"]
 
