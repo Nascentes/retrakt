@@ -1,2 +1,2 @@
-*/30 * * * * python3 /app/watchlist.py > /proc/1/fd/1 2>/proc/1/fd/2
+0 */6 * * * python3 /app/watchlist.py > /proc/1/fd/1 2>/proc/1/fd/2
 
