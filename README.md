@@ -18,7 +18,7 @@ My use case for this is that I use Radarr to import movies to be grabbed based o
 
 Edit config.py with your unique values.
 
-Edit retrakt_cron to update the schedule, if desired.
+Edit retrakt_cron to update the schedule, if desired. (default=every 6 hours)
 
 Build docker container (`git clone https://github.com/Nascentes/retrakt.git && cd retrakt && docker build -t retrakt .`)
 
