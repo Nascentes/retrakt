@@ -9,7 +9,7 @@ trakt_user = config.trakt_user
 local_path = config.local_path
 trakt_clientid = config.trakt_clientid
 trakt_secret = config.trakt_secret
-apiurl = 'https://api.trakt.tv'
+apiurl = 'https://trakt.tv'
 cwd = os.path.abspath(os.path.dirname(__file__))
 cache = os.path.join(cwd, '.local.db')
 
